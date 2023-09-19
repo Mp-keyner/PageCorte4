@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #0E0E0E;
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+}

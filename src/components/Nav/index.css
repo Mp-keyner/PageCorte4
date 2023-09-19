@@ -1,0 +1,27 @@
+.IntSear{
+    background: #373737;
+    border: none;
+}
+::placeholder {
+    color: white ;
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10pc;
+}
+.listas ul{
+    display: flex;
+    align-items: center;
+    gap: 2pc;
+}
+li{
+    list-style: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
