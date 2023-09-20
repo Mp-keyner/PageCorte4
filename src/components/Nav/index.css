@@ -1,27 +1,106 @@
-.IntSear{
-    background: #373737;
-    border: none;
+.IntSear {
+  background-color: transparent;
+  border: none;
+}
+.Buscar, .Buscar2 {
+  background: #373737;
+  width: 14pc;
+  display: flex;
+  align-items: center;
+  gap: 0.3pc;
+  height: 2pc;
+}
+.Buscar span, .Buscar2 span {
+  display: flex;
+  align-items: center;
+  gap: 0.5pc;
+  padding: 0 1pc;
+}
+.Buscar img, .Buscar2 img {
+  width: 1pc;
+}
+.Buscar input, .Buscar2 input {
+  color: white;
 }
 ::placeholder {
-    color: white ;
-    font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 nav {
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 10pc;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 10pc;
+  height: 4pc;
+  align-items: center;
 }
-.listas ul{
+.listas ul {
+  display: flex;
+  align-items: center;
+  gap: 2pc;
+}
+li {
+  list-style: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5pc;
+}
+.menu {
+  display: none;
+}
+.MenuDes{
+    display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+  .menu {
+    display: block;
+  }
+  nav {
     display: flex;
     align-items: center;
+    padding: 0 1pc;
+    justify-content: space-between;
+  }
+  .listas,
+  .Buscar {
+    display: none;
+  }
+  .listas ul {
+    flex-direction: column;
+  }
+  .MenuDes{
+    position: absolute;
+    top: 0pc;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10pc 0;
     gap: 2pc;
-}
-li{
-    list-style: none;
-}
-.logo{
+    transition: all 0.5s ease-in-out;
+  }
+  .Show{
+    transform: translateX(0pc);
+  }
+  .hide{
+    transform: translateX(-26pc);
+  }
+  .MenuDes ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1pc;
+  }
+  .x{
+    width: 3pc;
+    position: absolute;
+    top: 1pc;
+    right: 1pc;
+  }
 }
