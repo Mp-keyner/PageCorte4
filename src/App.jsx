@@ -4,6 +4,7 @@ import Layout from './components/Layout'
 const App = () => {
   return (
     <>
+      <p>hello</p>
       <Layout/>
     </>
   )
