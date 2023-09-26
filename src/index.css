@@ -9,3 +9,6 @@ body {
   color: whitesmoke;
   font-family: 'Montserrat', sans-serif;
 }
+::-webkit-scrollbar{
+  display: none;
+}

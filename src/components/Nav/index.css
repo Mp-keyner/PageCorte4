@@ -32,6 +32,10 @@ nav {
   padding: 0 10pc;
   height: 4pc;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 77%;
+  backdrop-filter: blur(8px);
 }
 .listas ul {
   display: flex;
@@ -64,6 +68,7 @@ li {
     align-items: center;
     padding: 0 1pc;
     justify-content: space-between;
+    width: 91.5%;
   }
   .listas,
   .Buscar {
@@ -85,12 +90,13 @@ li {
     padding: 10pc 0;
     gap: 2pc;
     transition: all 0.5s ease-in-out;
+    background-color: #000000;
   }
   .Show{
-    transform: translateX(0pc);
+    transform: translateY(0pc);
   }
   .hide{
-    transform: translateX(-26pc);
+    transform: translateY(-66pc);
   }
   .MenuDes ul {
     display: flex;
