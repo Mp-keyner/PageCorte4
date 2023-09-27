@@ -30,7 +30,7 @@ const Cart = () => {
     <div className='contaCosas'>
         <button onClick={() => {
             console.log(Product);
-            setProduct([...Cosas,  
+            setProduct([...Product,  
                { Product: {
                 id: 4,
                 name: 'tatata',
@@ -38,10 +38,10 @@ const Cart = () => {
               },}])
         }}>Add</button>
         {
-        Product.map(cosas => (
-            <div key={cosas.Product.id}>
-                <h1>{cosas.Product.name}</h1>
-                <p>Price: ${cosas.Product.price}</p>
+        Product.map(x => (
+            <div key={x.Product.id}>
+                <h1>{x.Product.name}</h1>
+                <p>Price: ${x.Product.price}</p>
             </div>
         ))
         }
