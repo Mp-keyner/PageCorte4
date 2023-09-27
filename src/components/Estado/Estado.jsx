@@ -1,18 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-const Estado = ({count, FuncionUpdate}) => {
-  const [disabled, setDisabled] = useState(false);
-    console.log(count)
-    console.log('Desde Estado')
-    const View = (x) => {
-      FuncionUpdate(x)
-      console.log(x)
-      count == 19 ? setDisabled(true) : setDisabled(false)
-    }
+const Estado = (prop) => {
   return (
     <>
-        <button disabled={disabled} onClick={() => View(count + 1)}>{count}View</button>
-        <button  onClick={() => View(0)}>reset</button>
+    <button disabled={prop.count == 20 ? true 
+    : false} onClick={() => prop.setCoun(prop.count +1)}>{prop.count}Comentarios</button>
     </>
   )
 }

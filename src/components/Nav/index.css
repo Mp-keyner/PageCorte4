@@ -50,14 +50,17 @@ li {
   align-items: center;
   justify-content: center;
   gap: 0.5pc;
-}
+} 
 .menu {
   display: none;
 }
 .MenuDes{
     display: none;
 }
-
+button {
+  padding: 0.6pc 1pc ;
+  margin: 1pc;
+}
 
 @media screen and (max-width: 700px) {
   .menu {
@@ -95,7 +98,7 @@ li {
   .Show{
     transform: translateY(0pc);
   }
-  .hide{
+  .hide{ 
     transform: translateY(-66pc);
   }
   .MenuDes ul {
