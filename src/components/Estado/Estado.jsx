@@ -1,10 +1,13 @@
 import React from 'react'
+import './Estado.css'
 
 const Estado = (prop) => {
   return (
     <>
-    <button disabled={prop.count == 20 ? true 
-    : false} onClick={() => prop.setCoun(prop.count +1)}>{prop.count}Comentarios</button>
+    <button 
+    className='botoCoun'
+    disabled={prop.count == 20 ? true 
+    : false} onClick={() => prop.setCoun(prop.count +1)}>{prop.count} Comentarios</button>
     </>
   )
 }

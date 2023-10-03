@@ -1,0 +1,11 @@
+.botoCoun{
+    background-color: rgb(66, 63, 63);
+    border: none;
+    padding: 1pc;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+.botoCoun:hover{
+    transform: scale(1.02);
+}

@@ -3,17 +3,21 @@ import Nav from '../Nav/Nav'
 import './index.css'
 import Estado from '../Estado/Estado'
 import Cart from '../Cart/Cart'
+import FormData from '../FormData/FormData'
 
 
 const Layout = () => {
   console.log('Desde Layout')
   const [count , setCoun] = useState(0)
   console.log(count, 'valor del estado')
+  const [product, setProduct] = useState({})
+  console.log(product)
   return (
     <>
         <Nav/>
         <section className='Container'>
          <Cart/>
+         <FormData product={product} setProduct={setProduct}/>
         </section>
         <div className='Container'>
           <h1>

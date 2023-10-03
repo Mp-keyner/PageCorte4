@@ -1,8 +1,18 @@
 .contaCosas{
     border: 1px solid red;
-    width: 100%;
+    width: 20pc;
     padding: 1pc;
     display: flex;
     flex-direction: column;
     gap: 1pc;
+} 
+.Products{
+    padding: 1pc;
+    height: 15pc;
+    display: flex;
+    align-items: flex-start;
+    gap: 1pc;
+    flex-direction: column;
+    border: 1px solid red;
+    overflow-y: scroll;
 }
