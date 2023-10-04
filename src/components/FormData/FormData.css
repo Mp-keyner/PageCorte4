@@ -3,10 +3,10 @@
     padding: 1pc;
 }
 
-#Inp::placeholder{
+#Inp::placeholder, .Inp::placeholder{
     color: black;
 }
-#Inp{
+#Inp, .Inp{
     padding: 0.4pc 0pc;
 
 }
