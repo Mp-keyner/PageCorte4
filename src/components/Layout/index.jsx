@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Nav from '../Nav/Nav'
 import './index.css'
 import Estado from '../Estado/Estado'
 import Cart from '../Cart/Cart'
 import FormData from '../FormData/FormData'
+import { MyContext } from '../../context/Context'
 
 
 const Layout = () => {
@@ -26,7 +27,7 @@ const Layout = () => {
     {
       Product: {
         id: 3,
-        name: 'Basketball',
+        name: 'B  asketball',
         price: 29.99,
       },
     },
@@ -37,7 +38,7 @@ const Layout = () => {
   const [count , setCoun] = useState(0)
   console.log(count, 'valor del estado')
   console.log(Product)
-
+  const {counter} = useContext(MyContext)
   return (
     <>
         <Nav/>
@@ -47,7 +48,7 @@ const Layout = () => {
         </section>
         <div className='Container'>
           <h1>
-            {count == 10 ? "Hello People" : 'na'}
+            El valor del contador Global es de {counter}
           </h1>
          </div>
         <div className='Container'>

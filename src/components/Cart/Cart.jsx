@@ -11,7 +11,7 @@ return (
             setProduct([...Product,  
                { Product: {
                 id: 4, 
-                name: 'tatata',
+                name: 'Pizaa',
                 price: 25678,
               },}])
         }}>Add</button>
