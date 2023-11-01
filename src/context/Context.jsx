@@ -7,7 +7,7 @@ export const MyContext = createContext();
 
 // Crear el proveedor del contexto en este caso MyContextProvider
 export const MyContextProvider = ({ children }) => {
-  const [myState, setMyState] = useState('Valor inicial');
+  const [myState, setMyState] = useState('Valor final');
   const contadorGlobal = useCounter()
   const {counter, Increment} = contadorGlobal
   return (

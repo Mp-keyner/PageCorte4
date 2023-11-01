@@ -6,14 +6,14 @@ import { MyContext } from '../../context/Context'
 
 
 const Estado = () => {
-  const {myState, counter, Increment} = useContext(MyContext)
+  // const {myState, counter, Increment} = useContext(MyContext)
   const Contador1 = useCounter()
   const Contador2 = useCounter()
-  const Contador3 = useCounter()
-  console.log(myState)
+
   return (
     <>
-    <button onClick={Increment}>{counter} Counter</button>
+    <button onClick={Contador1.Increment}>{Contador1.counter} Counter 1</button>
+    <button onClick={Contador2.Increment}>{Contador2.counter} Counter 2</button>
     </>
   )
 }
