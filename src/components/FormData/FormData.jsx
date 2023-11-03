@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './FormData.css'
 import { useState } from 'react'
+import { MyContext } from '../../context/Context'
 
-const FormData = ({setProduct, Product}) => {
+const FormData = () => {
+  const {setProduct, Product} = useContext(MyContext)
 
   const [Name, setName] = useState('')
   const [Price, setPrice] = useState('')

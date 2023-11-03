@@ -1,19 +1,36 @@
-// MyContext.js
 import { createContext, useState } from 'react';
-import useCounter from '../hook/useCounter';
-
-// Crear el contexto
 export const MyContext = createContext();
 
-// Crear el proveedor del contexto en este caso MyContextProvider
 export const MyContextProvider = ({ children }) => {
-  const [myState, setMyState] = useState('Valor final');
-  const contadorGlobal = useCounter()
-  const {counter, Increment} = contadorGlobal
+ 
+  const nombre = 'keyner'
+  const Cosas = [
+    {
+      Product: {
+        id: 1,
+        name: 'Football',
+        price: 49.99,
+      },
+    },
+    {
+      Product: {
+        id: 2,
+        name: 'Baseball',
+        price: 9.99,
+      },
+    },
+    {
+      Product: {
+        id: 3,
+        name: 'B  asketball',
+        price: 29.99,
+      },
+    },
+  ];
+  const [Product, setProduct] = useState(Cosas)
   return (
-    <MyContext.Provider value={{ myState, counter, Increment }}>
+    <MyContext.Provider value={{ nombre, Product, setProduct }}>
       {children}
     </MyContext.Provider>
   );
 };
-

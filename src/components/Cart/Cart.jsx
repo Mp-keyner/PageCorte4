@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Cart.css'
+import { MyContext } from '../../context/Context'
 
-const Cart = ({Product, setProduct}) => {
-    
+const Cart = () => {
+    const {Product, setProduct} = useContext(MyContext)
+    console.log(Product)
 return (
    <>
     <div className='contaCosas'>
